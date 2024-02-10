@@ -7,7 +7,7 @@ cmake_minimum_required(VERSION 3.5)
 set(CMAKE_SYSTEM_NAME Generic)
 
 # Processor
-set(CMAKE_SYSTEM_PROCESSOR msp430fr2476)
+set(CMAKE_SYSTEM_PROCESSOR MSP430)
 
 # Set the sysroot path root directory for system header and library search paths.
 set(CMAKE_FIND_ROOT_PATH "/opt/ti/msp430/gcc")
@@ -161,45 +161,9 @@ set(CMAKE_READELF "${CMAKE_FIND_ROOT_PATH}/bin/msp430-elf-readelf" CACHE FILEPAT
 # Avoids running the linker during try_compile()
 set(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY)
 
-# ########################################################## Configuration Setup
-
-# Choose the type of build, options are: None Debug Release
-set(CMAKE_BUILD_TYPE "Debug" CACHE STRING "" FORCE)
-
-# Enable/Disable color output during build.
-set(CMAKE_COLOR_MAKEFILE "ON" CACHE BOOL "" FORCE)
-
-# Install path prefix, prepended onto install directories.
-set(CMAKE_INSTALL_PREFIX "" CACHE PATH "" FORCE)
-
-# Enable/Disable output of compile commands during generation.
-set(CMAKE_EXPORT_COMPILE_COMMANDS "ON" CACHE BOOL "" FORCE)
-
-# Makefile Verbose
-set(CMAKE_VERBOSE_MAKEFILE "ON" CACHE BOOL "" FORCE)
-
-# ##########################################################
-# Compiler Definitions
-add_compile_definitions()
-
+# ########################################################## Compiler Includes
 # Compiler Include Headers
 include_directories(${CMAKE_FIND_ROOT_PATH}/include)
-
-# Compiler Flags
-add_compile_options(-mmcu=${CMAKE_SYSTEM_PROCESSOR}
-    -mhwmult=f5series
-    -Og
-    -g
-    -gdwarf-3
-    -Wall)
-
-# # Linker Flags
-add_link_options(-mmcu=${CMAKE_SYSTEM_PROCESSOR}
-    -mhwmult=f5series
-    -Og
-    -g
-    -gdwarf-3
-    -Wall)
 
 # # Linker Library Search Paths
 link_directories(${CMAKE_FIND_ROOT_PATH}/include)
