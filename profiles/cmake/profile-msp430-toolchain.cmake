@@ -10,7 +10,7 @@ set(CMAKE_SYSTEM_NAME Generic)
 set(CMAKE_SYSTEM_PROCESSOR MSP430)
 
 # Set the sysroot path root directory for system header and library search paths.
-set(CMAKE_FIND_ROOT_PATH "/opt/ti/msp430-gcc")
+set(CMAKE_FIND_ROOT_PATH "/opt/ti/msp430/gcc")
 
 # ########################################################## C Compiler Settings
 
