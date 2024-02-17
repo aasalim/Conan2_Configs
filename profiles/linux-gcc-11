@@ -10,3 +10,4 @@ build_type=Release
 [buildenv]
 CC=gcc-11
 CXX=g++-11
+CTEST_OUTPUT_ON_FAILURE=1

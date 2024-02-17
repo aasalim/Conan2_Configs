@@ -8,6 +8,7 @@ compiler.cppstd=17
 build_type=Release
 
 [buildenv]
+CTEST_OUTPUT_ON_FAILURE=1
 
 [conf]
 tools.cmake.cmaketoolchain:user_toolchain+={{ os.path.join(profile_dir, "cmake/profile-msp430-toolchain.cmake") }}
