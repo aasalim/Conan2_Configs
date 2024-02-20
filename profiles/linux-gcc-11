@@ -11,3 +11,4 @@ build_type=Release
 CC=gcc-11
 CXX=g++-11
 CTEST_OUTPUT_ON_FAILURE=1
+GTEST_OUTPUT=build/reports/gtest_report.xml

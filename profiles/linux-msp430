@@ -9,6 +9,7 @@ build_type=Release
 
 [buildenv]
 CTEST_OUTPUT_ON_FAILURE=1
+GTEST_OUTPUT=build/reports/gtest_report.xml
 
 [conf]
 tools.cmake.cmaketoolchain:user_toolchain+={{ os.path.join(profile_dir, "cmake/profile-msp430-toolchain.cmake") }}
