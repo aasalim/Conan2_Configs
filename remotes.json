@@ -9,6 +9,6 @@
             "name": "BlinkProject",
             "url": "http://192.168.50.17:8081/artifactory/api/conan/BlinkProject",
             "verify_ssl": true
-        },
+        }
     ]
 }
