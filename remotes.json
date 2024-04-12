@@ -7,7 +7,7 @@
         },
         {
             "name": "conan-dev-local",
-            "url": "http://192.168.50.17:8081/artifactory/api/conan/conan-dev-local",
+            "url": "http://192.168.50.35:8081/artifactory/api/conan/conan-dev-local",
             "verify_ssl": true
         }
     ]
