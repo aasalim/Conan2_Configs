@@ -163,7 +163,8 @@ set(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY)
 
 # ########################################################## Compiler Includes
 # Compiler Include Headers
-include_directories(${CMAKE_FIND_ROOT_PATH}/include)
+include_directories(/usr/lib/gcc/arm-none-eabi/10.3.1/include)
 
 # # Linker Library Search Paths
-link_directories(${CMAKE_FIND_ROOT_PATH}/include)
+link_directories(/usr/lib/gcc/arm-none-eabi/10.3.1/include)
+ 
