@@ -2,12 +2,11 @@
 os=baremetal
 arch=armv7
 compiler=gcc
-compiler.version=9.3
+compiler.version=10.3
 compiler.libcxx=libstdc++11
 
 [buildenv]
 CTEST_OUTPUT_ON_FAILURE=1
-GTEST_OUTPUT=build/reports/gtest_report.xml
 
 [conf]
 tools.cmake.cmaketoolchain:user_toolchain+={{ os.path.join(profile_dir, "cmake/profile-armv7-toolchain.cmake") }}
