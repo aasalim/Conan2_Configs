@@ -4,11 +4,6 @@
             "name": "conancenter",
             "url": "https://center2.conan.io",
             "verify_ssl": true
-        },
-        {
-            "name": "conan-dev-local",
-            "url": "http://192.168.50.7:8081/artifactory/api/conan/conan-dev-local",
-            "verify_ssl": true
         }
     ]
 }
