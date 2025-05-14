@@ -10,7 +10,7 @@ set(CMAKE_SYSTEM_NAME Generic)
 set(CMAKE_SYSTEM_PROCESSOR ARM)
 
 # Set the sysroot path root directory for system header and library search paths.
-set(CMAKE_FIND_ROOT_PATH "/usr")
+set(CMAKE_FIND_ROOT_PATH "/opt/arm/tools/arm-gnu-toolchain-14.2.rel1-x86_64-arm-none-eabi")
 
 # ########################################################## C Compiler Settings
 
@@ -163,8 +163,8 @@ set(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY)
 
 # ########################################################## Compiler Includes
 # Compiler Include Headers
-include_directories(/usr/lib/gcc/arm-none-eabi/10.3.1/include)
+include_directories(${CMAKE_FIND_ROOT_PATH}/include)
 
 # # Linker Library Search Paths
-link_directories(/usr/lib/gcc/arm-none-eabi/10.3.1/include)
+link_directories(${CMAKE_FIND_ROOT_PATH}/include)
  
